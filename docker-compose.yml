@@ -1,8 +1,8 @@
-web:
-  image: registry.cn-beijing.aliyuncs.com/online-vcg/zhy_test
+cmdb:
+  image: registry.cn-beijing.aliyuncs.com/online-vcg/ops-cmdb
   ports:
     - '8888'
   restart: always
   labels:
-    aliyun.routing.port_8888: http://web
+    aliyun.routing.port_8888: http://cmdb
     aliyun.scale: '3'
