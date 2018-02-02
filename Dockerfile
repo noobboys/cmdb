@@ -1,4 +1,4 @@
-FROM registry.aliyuncs.com/acs-sample/pythonpython:2.7
+FROM registry.aliyuncs.com/acs-sample/python:2.7
 ADD . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
