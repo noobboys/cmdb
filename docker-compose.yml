@@ -1,0 +1,8 @@
+web:
+  image: registry.cn-beijing.aliyuncs.com/online-vcg/zhy_test
+  ports:
+    - '8888'
+  restart: always
+  labels:
+    aliyun.routing.port_8888: http://web
+    aliyun.scale: '3'
